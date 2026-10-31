@@ -145,7 +145,7 @@ proxies from hand-drawn boxes, so the video scores are not comparable with the d
 I used Claude (Anthropic) as an assistant for planning, writing and debugging code, and drafting this README and the
 report. I ran every experiment in Colab myself, supplied the manual box prompts, inspected the outputs and made
 the keep/discard decisions. SAM is a pretrained model by Meta AI (Apache-2.0).
-(Edit this paragraph so it matches exactly what you did.)
+
 
 ## Licences and credits
 
