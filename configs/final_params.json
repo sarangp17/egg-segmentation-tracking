@@ -1,0 +1,60 @@
+{
+  "split": {
+    "seed": 42,
+    "eval_fraction": 0.2,
+    "method": "dHash (9x8), Hamming threshold 10, group-aware"
+  },
+  "sam_reference": {
+    "model": "SAM ViT-B (segment-anything)",
+    "points_per_side": 32,
+    "pred_iou_thresh": 0.88,
+    "stability_score_thresh": 0.92,
+    "min_mask_region_area": 200,
+    "egg_rule": {
+      "min_area_frac": 0.02,
+      "max_area_frac": 0.9,
+      "min_solidity": 0.88,
+      "max_aspect": 2.5,
+      "max_edge_cover": 0.2,
+      "max_saturation": 70,
+      "min_value_strict": 170,
+      "min_value_relaxed": 155
+    },
+    "manual_box_images": 17,
+    "total_images": 110
+  },
+  "classical_final_E6": {
+    "sat_max": 40,
+    "val_min": 170,
+    "opening_kernel": 9,
+    "closing_kernel": 0,
+    "min_area_frac": 0.02,
+    "max_edge": 1.0,
+    "max_aspect": 3.0
+  },
+  "video_V3": {
+    "core_sat_max": 60,
+    "core_val_min": 170,
+    "grow_kernel": 21,
+    "loose_sat_max": 100,
+    "loose_val_min": 120,
+    "zone_y": [
+      160,
+      440
+    ],
+    "opening_kernel": 9,
+    "min_area_frac": 0.01,
+    "max_aspect": 3.0,
+    "tracked_seconds": [
+      10,
+      41
+    ]
+  },
+  "tracker": {
+    "max_dist_px": 100,
+    "extra_dist_per_missed_frame": 5,
+    "max_missed_frames": 24,
+    "min_hits_for_new_id": 3,
+    "ignore_new_blob_within_px": 40
+  }
+}

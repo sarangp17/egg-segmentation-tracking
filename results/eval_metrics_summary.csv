@@ -1,0 +1,17 @@
+metric,dev,eval
+macro_iou,0.4963,0.4092
+median_iou,0.5366,0.4753
+std_iou,0.2602,0.2665
+macro_dice,0.6181,0.5249
+median_dice,0.6984,0.6431
+std_dice,0.2637,0.2983
+macro_precision,0.684,0.5766
+median_precision,0.9134,0.7196
+std_precision,0.3618,0.3979
+macro_recall,0.6772,0.6474
+median_recall,0.7131,0.6829
+std_recall,0.2131,0.2879
+micro_iou,0.3997,0.2797
+micro_dice,0.5711,0.4372
+micro_precision,0.4956,0.337
+micro_recall,0.6737,0.622
